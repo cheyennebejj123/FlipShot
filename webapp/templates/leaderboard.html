@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5">
+    <title>FlipShot Leaderboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>⚪ FlipShot Leaderboard ⚪</h1>
+
+    {% for mode, players in leaderboard.items() %}
+        <h2>Mode {{ mode }}</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Place</th>
+                    <th>Player Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for player in players %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ player[0] }}</td>
+                <td>{{ player[1] }}</td>
+            </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <br>
+    {% endfor %}
+</body>
+</html>
