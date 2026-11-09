@@ -2,7 +2,7 @@
 
 **A Raspberry Pi adaptation of the basketball arcade game, played with ping pong balls, that I designed, built, 3D printed and coded by myself from start to finish.**
 
-FlipShot was my final project for **ECE 350 (Embedded Systems and Hardware Interfaces) at George Mason University, Spring 2025**. It's an adaptation of the basketball arcade game, played with **ping pong balls**. Players type their name on a keypad, pick a difficulty, and get 60 seconds to score as many shots as they can. In the harder mode a servo sweeps the hoop back and forth. Every game is saved to a leaderboard that is served live on a web page.
+FlipShot was my final project for my embedded systems college course in 2025. It's an adaptation of the basketball arcade game, played with **ping pong balls**. Players type their name on a keypad, pick a difficulty, and get 60 seconds to score as many shots as they can. In the harder mode a servo sweeps the hoop back and forth. Every game is saved to a leaderboard that is served live on a web page.
 
 I did all of it: the mechanical design, the 3D printing, the wiring, and every line of code. I wrote the code by hand, including the keypad name-entry system and the debouncing logic described below.
 
